@@ -1,0 +1,77 @@
+* {
+    color: darkblue;
+}
+
+.node {
+    border: 1px solid darkblue;
+    border-radius: 50%;
+    padding: 25px;
+    max-width: 25px;
+    max-height: 25px;
+    display: block;
+    position: absolute;
+    margin-top: 0px;
+    color: darkblue;
+}
+
+.content .img{
+    display: block;
+    position: absolute;
+    margin-left: 90px;
+}
+
+nav,
+.navbar-brand {
+    color: white;
+    background-color: darkblue;
+}
+
+.navbar-brand:hover {
+    color: white;
+    background-color: darkblue;
+}
+
+.row.option div,
+.stack {
+    border: 1px solid darkblue;
+    color: darkblue;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.row.option div:hover,
+.row.option div:hover>span,
+.stack:hover {
+    color: white;
+    background-color: darkblue;
+}
+
+.priority-stack {
+    border: 1px solid salmon;
+    color: salmon;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.priority-stack:hover {
+    color: white;
+    background-color: salmon;
+}
+
+.row.option {
+    justify-content: center;
+}
+
+.btn-add {
+    color: white;
+    background-color: darkblue;
+}
+
+.btn-add:hover {
+    color: darkblue;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid darkblue;
+}

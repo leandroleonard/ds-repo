@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queue</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.css}">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="stylesheet" th:href="@{/css/icons.css}">
+    <link rel="stylesheet" th:href="@{/css/queue.css}">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <a th:href="@{/}" class="navbar-brand">Data Structure : Queue</a>
+    </nav>
+
+    <div class="container my-5 justify-content-center">
+        <div class="row option text-center">
+            <div class="col-md-3 mr-3" data-toggle="modal" data-target=".bs-modal-add">
+                Add to queue
+            </div>
+            <div class="col-md-3" id="remove">
+                Remove from queue
+            </div>
+            <div class="col-md-3 ml-3" data-toggle="modal" data-target=".bs-modal-add-priority">
+                Add to priority queue
+            </div>
+        </div>
+        <h3 class="text-center my-3">Care Line</h3>
+        <div class="row mt-4 content text-center">
+        </div>
+
+        <div class="modal fade bs-modal-add" tabindex="-1" role="dialog" aria-labelledby="myAddModal"
+            aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title mt-0" id="myAddModal">Name</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-inline" id="form-add">
+                            <div class="form-group my-2">
+                                <input type="text" name="name" id="form-add-name" class="form-control" required
+                                    placeholder="Patient Name">
+                            </div>
+                            <button type="submit" class="btn btn-add"> <span
+                                    class="fa fa-save mr-2"></span>Add</button>
+                        </form>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <div class="modal fade bs-modal-add-priority" tabindex="-1" role="dialog" aria-labelledby="myAddModalPriority"
+            aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title mt-0" id="myAddModalPriority">Priority queue/h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-inline" id="form-add-priority">
+                            <div class="form-group my-2">
+                                <input type="text" name="name-priority" id="form-add-name-priority" class="form-control" required
+                                    placeholder="Patient name">
+                            </div>
+                            <button type="submit" class="btn btn-add"> <span
+                                    class="fa fa-save mr-2"></span>Add</button>
+                        </form>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+    </div>
+
+    <!-- jQuery  -->
+    <script th:src="@{/js/jquery.min.js}"></script>
+    <script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+    <script th:src="@{/js/jquery.slimscroll.js}"></script>
+
+    <!-- App js -->
+    <script th:src="@{/js/queue.js}"></script>
+</body>
+
+</html>

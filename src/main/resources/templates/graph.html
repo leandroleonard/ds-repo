@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.css}">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="stylesheet" th:href="@{/css/icons.css}">
+    <link rel="stylesheet" th:href="@{/css/graph.css}">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <a th:href="@{/}" class="navbar-brand">Data Structure : Graph</a>
+    </nav>
+
+    <div class="container my-5 justify-content-center">
+        <div class="row option text-center">
+            <div class="col-md-6" data-toggle="modal" data-target=".bs-modal-add">
+                <span class="fas fa-car mr-2"></span>Add destination
+            </div>
+        </div>
+        <h3 class="text-center my-3">Calculate nearest rout</h3>
+        <div class="row container">
+            <div class="col-md-6">
+                <h1 id="shorterRoot"></h1>
+            </div>
+            <div class="col-md-6">
+                <h4>Pick the points</h4>
+                <form id="form-calculate">
+                    <div class="row">
+                        <div class="col-6">
+                            <p>Starting point:</p>
+                            <div id="starter"></div>
+                        </div>
+                        <div class="col-6">
+                            <p>Destination:</p>
+                            <div id="arrived"></div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-add btn">Calculate</button>
+                </form>
+
+            </div>
+        </div>
+
+        <div class="modal fade bs-modal-add" tabindex="-1" role="dialog" aria-labelledby="myAddModal"
+            aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title mt-0" id="myAddModal">Insert route</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-inline" id="form-add">
+                            <div class="form-group my-2">
+                                <input type="text" name="dest" id="form-add-destination" class="form-control" required
+                                    placeholder="Destination">
+                            </div>
+                            <div class="form-group my-2">
+                                <input type="text" name="nearby" id="form-add-nearby" class="form-control" required
+                                    placeholder="Nearby location">
+                            </div>
+                            <button type="submit" class="btn btn-add"> <span
+                                    class="fa fa-save mr-2"></span>Adicionar</button>
+                        </form>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+    </div>
+
+    <!-- jQuery  -->
+    <script th:src="@{/js/jquery.min.js}"></script>
+    <script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+    <script th:src="@{/js/jquery.slimscroll.js}"></script>
+
+    <!-- App js -->
+    <script th:src="@{/js/graph.js}"></script>
+</body>
+
+</html>

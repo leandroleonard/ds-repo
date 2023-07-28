@@ -1,0 +1,430 @@
+@import url('https://fonts.cdnfonts.com/css/century-gothic');
+@import url('https://fonts.cdnfonts.com/css/museo');
+*{
+    font-family: "Museo", sans-serif;
+}
+
+.main-navbar{
+    background-color: rgb(231, 165, 42);
+}
+
+.icon-navbar-text{
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.form-input-search{
+    background-color: rgb(234, 173, 2);
+    color: white;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    border-right: 0px;
+}
+
+.form-input-search:focus{
+    border: 1px solid rgb(234, 173, 2);
+    background-color: rgb(231, 165, 42);
+    color: #fff;
+}
+
+.form-btn-addon-search{
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    border-left: 0px;
+    color: white;
+    background-color: rgb(201, 119, 0);
+}
+
+.form-btn-addon-search:hover
+{
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    border-left: 0.5px solid white;
+    color: white;
+    background-color: rgb(234, 173, 2);
+}
+
+.banner-hero{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("../../imagens/banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 750px;
+    max-width: 100%;
+}
+@media (max-width: 768px) {
+    /* Estilos para dispositivos com largura máxima de 768px (tablets e smartphones em modo paisagem) */
+  }
+  
+@media (max-width: 480px) {
+    .banner-hero{
+        min-height: 1000px;
+        max-width: 100%;
+    }
+  }
+
+.scrollSite{
+	overflow: auto;
+	position: relative;
+	height: 380px;
+}
+
+::selection { background-color: #E13300; color: white; }
+::-moz-selection { background-color: #E13300; color: white; }
+
+.banner-hero-caption .title h1
+{
+    font-size: 3.5em;
+    font-weight: 400;
+    color: white;
+    margin: 0px;
+}
+.title{
+    margin-bottom: 10px;
+}
+
+.banner-hero-caption .title span{
+    font-weight: 600;
+}
+
+.banner-hero-caption .simple-text p{
+    color: white;
+    font-size: 22px;
+    margin: 0px;
+}
+
+.hero{
+    margin-top: 10.5rem;
+    margin-bottom: -5rem;
+}
+
+.btn-contact{
+    padding: 15px 25px 15px 25px;
+    background-color: rgb(201, 119, 0);
+    border-radius: 0px;
+    color: white;
+    font-weight: 700;
+}
+
+.btn-whatsapp {
+    color: white;
+    background-color: transparent;
+    background-image: none;
+    border-color: white;
+    padding: 15px 25px 15px 25px;
+    border-radius: 0px;
+    font-weight: 700;
+}
+
+.sales{
+    background-color: rgb(234, 173, 2);
+}
+
+.sales-caption h1{
+    letter-spacing: 5px;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-top: 15%;
+}
+.sales h1{
+    color: white;
+    letter-spacing: 5px;
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+}
+.sales-caption .simple-text{
+    /* font-family: "Century Gothic"; */
+    word-spacing: 3.5px;
+    font-size: 21px;
+}
+
+.sales .nav-pills .nav-link.active,
+.sales .nav-pills .show > .nav-link {
+  color: #000;
+  background-color: rgb(201, 119, 0);
+  border-radius: 0px;
+  border-color: rgb(201, 119, 0);
+}
+
+.sales .nav-pills li > a {
+    border: 1px solid white;
+    border-radius: 0px;
+    color: black;
+}
+
+.sales form label{
+    color: #000;
+    font-size: 12px;
+    /* margin-bottom: -1.5rem; */
+}
+
+.btn-sales-calculate {
+    color: #000;
+    background-color: transparent;
+    background-image: none;
+    border-color: white;
+    padding: 10px 15px 10px 15px;
+    border-radius: 0px;
+}
+
+.form-control-range{
+    cursor: pointer;
+}
+
+.sales-resume{
+    font-size: 12px;
+}
+
+.time{
+    background-color: rgb(234, 173, 2);
+    padding: 80px 30px 50px 30px;
+}
+
+.time .card-body{
+    text-align: center;
+    background-color: transparent;
+    background-image: none;
+}
+.card-time {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+}
+
+.card-time .btn-contact-time{
+    padding: 10px 40px 10px 40px;
+    background-color: rgb(201, 119, 0);
+    border-radius: 40px;
+    color: white;
+    font-weight: 700;
+}
+.card-time .btn-contact-time:hover{
+    padding: 10px 40px 10px 40px;
+    background-color: rgb(234, 173, 2);
+    border-radius: 40px;
+    color: white;
+    font-weight: 700;
+    border-color: white;
+}
+
+.card-time .card-title{
+    color: #000;
+    margin-bottom: -1.3rem;
+}
+.card-time .card-subtitle{
+    color: #fff;
+}
+
+.produtos{
+    padding: 80px 0px 50px 0px;
+}
+
+.produtos .card-body{
+    text-align: center;
+    background-color: transparent;
+    background-image: none;
+}
+
+.card-product {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+}
+
+.btn-read-more{
+    padding: 10px 40px 10px 40px;
+    background-color: rgb(201, 119, 0);
+    border-radius: 0px;
+    color: white;
+    font-weight: 700;
+}
+.btn-read-more:hover{
+    padding: 10px 40px 10px 40px;
+    background-color: rgb(234, 173, 2);
+    /* border-radius: 40px; */
+    color: white;
+    font-weight: 700;
+    border-color: white;
+}
+
+.card-product .card-title{
+    color: #000;
+    margin-bottom: -1.3rem;
+}
+.card-product .card-title span{
+    color: rgb(234, 173, 2);
+}
+.card-product .card-subtitle{
+    color: #8b8a8a;
+    font-size: 16px;
+    text-align: center;
+}
+
+.section3{
+    background-color: rgb(234, 173, 2);
+    /* padding: 80px 5rem 50px 50px; */
+    padding: 3rem;
+    padding-top: 7rem;
+    min-height: 650px;
+}
+.section3 .title{
+    font-size: 3.5em;
+    font-weight: 500;
+    margin: 0px;
+}
+.section3 .title-cap{
+    font-size: 4em;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: rgb(201, 119, 0);
+}
+.section3 .section3-text{
+    margin-bottom: 50px;
+}
+.section3 .simple-text{
+    font-size: 1.3em;
+    text-align: justify;
+}
+
+.section3 .image-caption{
+    margin-left: auto;
+}
+
+.section3 .z{
+    background-image: url('../../imagens/img.png');
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+@media (max-width: 480px) {
+    .section3 .z{
+        min-height: 300px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+  }
+
+.section4{
+    padding: 3rem;
+}
+.section4 .title{
+    font-size: 3.5em;
+    font-weight: 500;
+    margin: 0px;
+}
+.section4 .title-cap{
+    font-size: 4em;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: rgb(201, 119, 0);
+}
+.section4 .section3-text{
+    margin-bottom: 50px;
+}
+.section4 .simple-text{
+    font-size: 1.3em;
+    text-align: right;
+}
+
+.section4 .image-caption{
+    margin-left: auto;
+}
+
+.section4 .img-section4{
+    box-shadow: -10px 10px 0px rgb(231, 165, 42);
+}
+
+.card-news{
+    border: 1px solid rgb(231, 165, 42);
+    border-radius: 0px;
+}
+
+.card-news .card-body span{
+    color: rgb(231, 165, 42);
+}
+
+footer{
+    background-color: #000;
+    color: #fff;
+    padding: 50px 20px 50px 50px;
+    font-size: 1.2rem;
+}
+
+
+footer h4 a{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+    margin-right: 20px;
+    margin-bottom: 0px;
+}
+
+footer h4 a:hover{
+    color: rgb(210, 208, 208);
+    text-decoration: none;
+}
+
+footer ul{
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+.countdown{
+    background-color: rgb(231, 165, 42);
+    padding: 50px;
+}
+
+
+input[type=range] {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 0.5em;
+    border-radius: 5px;
+    background-color: white;
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-thumb{
+  -webkit-appearance: none; 
+  border: 2px solid white;
+  
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgb(234, 173, 2);
+}
+
+.strong{
+    font-weight: 700;
+}

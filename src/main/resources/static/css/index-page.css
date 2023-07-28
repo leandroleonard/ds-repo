@@ -1,0 +1,36 @@
+*{
+    color: darkblue;
+}
+nav,
+.navbar-brand {
+    color: white;
+    background-color: darkblue;
+}
+
+.navbar-brand:hover {
+    color: white;
+    background-color: darkblue;
+}
+
+.row.option div{
+    border: 1px solid darkblue;
+    color: darkblue;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+.row.option div a{
+    color: darkblue;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.row.option div:hover,
+.row.option div:hover > a {
+    color: white;
+    background-color: darkblue;
+}
+
+.row.option {
+    justify-content: center;
+}
